@@ -1,0 +1,29 @@
+.container {
+    background-color: rgb(92, 196, 196);
+    width: 400px;
+    height: 400px;
+    margin-top: 10%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding-top: 30%;
+    border: 1px solid black;
+    font-size: 50px;
+}
+
+.item:hover {
+    background-color: rgb(2, 129, 129);
+}
