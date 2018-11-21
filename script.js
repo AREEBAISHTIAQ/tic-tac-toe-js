@@ -6,8 +6,8 @@ let item5 = document.getElementById("item5");
 let item6 = document.getElementById("item6");
 let item7 = document.getElementById("item7");
 let item8 = document.getElementById("item8");
-let item9 = document.getElementById("item9");
-let result = document.getElementById("result");
+let item9 = document.getElementById("item9");;
+let result = document.getElementById("result")
 
 item1.onclick = function() {
     if(item1.innerHTML == "O") {
@@ -18,7 +18,6 @@ item1.onclick = function() {
     guidGenerator();
     Result();
 }
-
 item2.onclick = function() {
     if(item2.innerHTML == "O") {
         return item2.innerHTML = "O";
@@ -120,9 +119,9 @@ function guidGenerator() {
 }
 
 function Result() {
-    if(item1.innerHTML == "X" && item2.innerHTML == "X" && item3.innerHTML == "X") {
-        result.innerHTML = "Human Won The Game!";
-        Reloadwa();
+   if(item1.innerHTML == "X" && item2.innerHTML == "X" && item3.innerHTML == "X") {
+       result.innerHTML = "Human Won The Game!";
+       Reloadwa();
     } else if(item1.innerHTML == "X" && item4.innerHTML == "X" && item7.innerHTML == "X") {
         result.innerHTML = "Human Won again!";
         Reloadwa();
@@ -173,4 +172,4 @@ function Result() {
 
 function Reloadwa() {
         setTimeout("location.reload(true);", 1000);
-};
+}
