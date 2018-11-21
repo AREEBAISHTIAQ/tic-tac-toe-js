@@ -111,8 +111,15 @@ function guidGenerator() {
         select[7] = item8;
         select[8] = item9;
         var selected = select[Math.floor(Math.random()*select.length)];
-        if (selected.innerHTML == false) {
+        let emptySelection = selected.value = "";
+        if (selected.innerHTML == emptySelection) {
             return  (selected.innerHTML = "O");
+        } else if (selected.innerHTML != emptySelection) {
+            if (selected.innerHTML == "X") {
+                return ((selected*7).innerHTML = "X")
+            } else if (selected.innerHTML == "O"){
+                return ((selected*7).innerHTML = "O")
+            }
         }
     };
     return (S4());
