@@ -173,4 +173,4 @@ function Result() {
 
 function Reloadwa() {
         setTimeout("location.reload(true);", 1000);
-}
+};
