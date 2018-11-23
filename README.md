@@ -1,4 +1,4 @@
-# tic-tac-toe-js
+# Tic Tac Toe
 
 This is a Tic Tac Toe project from "The Odin Project" curriculum.
 
